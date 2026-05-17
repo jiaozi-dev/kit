@@ -1,0 +1,35 @@
+{
+    "name": "@jiaozi-dev/kit",
+    "version": "0.0.1",
+    "description": "A modern, type-safe TypeScript utility kit.",
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "require": "./dist/index.cjs",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "dev": "tsdown --watch",
+        "build": "tsdown"
+    },
+    "devDependencies": {
+        "tsdown": "^0.21.7",
+        "typescript": "^6.0.2"
+    },
+    "keywords": [
+        "jiaozi-dev",
+        "kit",
+        "enum"
+    ],
+    "sideEffects": false,
+    "author": "yxdtg",
+    "license": "MIT"
+}
