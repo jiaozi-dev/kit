@@ -1,6 +1,6 @@
 {
     "name": "@jiaozi-dev/kit",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "A modern, type-safe TypeScript utility kit.",
     "type": "module",
     "main": "./dist/index.cjs",
@@ -34,6 +34,6 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/jiaozi-dev/jiaozi-dev-kit.git"
+        "url": "https://github.com/jiaozi-dev/kit.git"
     }
 }
