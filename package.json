@@ -1,6 +1,6 @@
 {
     "name": "@jiaozi-dev/kit",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "A modern, type-safe TypeScript utility kit.",
     "type": "module",
     "main": "./dist/index.cjs",
@@ -30,6 +30,10 @@
         "enum"
     ],
     "sideEffects": false,
-    "author": "yxdtg",
-    "license": "MIT"
+    "author": "Yuxiang Liu",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jiaozi-dev/jiaozi-dev-kit.git"
+    }
 }
