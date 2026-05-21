@@ -1,6 +1,6 @@
 //
 type EnumKey = string;
-type EnumValue = any;
+type EnumValue = string | number | boolean | object | null | symbol | bigint;
 type EnumObject = Record<EnumKey, EnumValue>;
 
 //
