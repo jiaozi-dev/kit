@@ -24,7 +24,7 @@ pnpm add @jiaozi-dev/kit
 ## Enum
 
 ```typescript
-import { Enum, getEnumKeys, getEnumValues, getEnumEntries, hasEnumKey, getEnumValue } from "@jiaozi-dev/kit";
+import { Enum } from "@jiaozi-dev/kit";
 
 const STATUS = Enum({
     Success: "success",
@@ -42,24 +42,27 @@ type STATUS = Enum<typeof STATUS>;
 // inferred as
 // type STATUS = "success" | "warning" | "error";
 
-getEnumKeys(STATUS);
+Enum.keys(STATUS);
 // inferred as
 // Readonly<["Success", "Warning", "Error"]>
 
-getEnumValues(STATUS);
+Enum.values(STATUS);
 // inferred as
 // Readonly<["success", "warning", "error"]>
 
-getEnumEntries(STATUS);
+Enum.entries(STATUS);
 // inferred as
 // Readonly<[["Success", "success"], ["Warning", "warning"], ["Error", "error"]]>
 
-hasEnumKey(STATUS, "Success");
+Enum.hasKey(STATUS, "Success");
 // inferred as
 // true
 
 STATUS.Success;
-getEnumValue(STATUS, "Success");
+// inferred as
+// "success"
+
+Enum.getValue(STATUS, "Success");
 // inferred as
 // "success"
 ```
